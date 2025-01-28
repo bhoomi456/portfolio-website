@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHOOMI - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(20, 20, 58);
+            padding: 0 20px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: rgb(134, 134, 234);
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 20px;
+        }
+
+        .firstSection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+            padding: 20px;
+            gap: 30px;
+        }
+
+        .firstSection > div {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+
+        .rightSection img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .Purple {
+            color: rgb(153, 67, 234);
+        }
+
+        #element {
+            color: rgb(153, 67, 234);
+        }
+
+        .aboutSection, .contactSection {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .aboutSection h1, .contactSection h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .aboutSection p, .contactSection p {
+            font-size: 1rem;
+            color: gray;
+        }
+
+        .secondSection {
+            max-width: 90vw;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .secondSection .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .secondSection .vertical {
+            text-align: center;
+            background-color: rgb(20, 20, 58);
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        .image-top {
+            width: 50px;
+            margin: 0 auto;
+        }
+
+        .vertical-title {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .vertical-desc {
+            color: gray;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            padding: 20px;
+            text-align: center;
+            color: gray;
+        }
+
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .firstSection {
+                flex-direction: column;
+            }
+
+            .leftSection {
+                font-size: 1.5rem;
+            }
+
+            .secondSection .box {
+                flex-direction: column;
+            }
+
+            .secondSection .vertical {
+                width: auto;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Bhoomi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My Name is <span class="Purple">Bhoomi</span>
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="pic.png" alt="">
+            </div>
+        </section>
+        <section class="aboutSection">
+            <h1>About Me</h1>
+            <p>
+                I am a skilled developer with experience in Python, Java, MySQL, HTML, CSS, and DSA. I enjoy building elegant solutions to complex problems and designing interactive web applications.
+            </p>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="pic2.png" alt="">
+                    <div class="vertical-title">HTML Developer</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="pic2.png" alt="">
+                    <div class="vertical-title">Web Designer</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="pic2.png" alt="">
+                    <div class="vertical-title">Frontend Developer</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                </div>
+            </div>
+            <h1>Projects</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="todo.png" alt="">
+                    <div class="vertical-title">To-Do App</div>
+                    <div class="vertical-desc">
+                        A simple and intuitive to-do app for task management and productivity.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="portfolio.png" alt="">
+                    <div class="vertical-title">Portfolio Website</div>
+                    <div class="vertical-desc">
+                        A sleek and responsive portfolio website showcasing my work and skills.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contactSection">
+            <h1>Contact Me</h1>
+            <p>Email: bhoomi@example.com</p>
+            <p>Phone: +123-456-7890</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div>
+                <h3>Bhoomi's Developer Portfolio</h3>
+            </div>
+            <div>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.bhoomiportfolio.com | All rights Reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
